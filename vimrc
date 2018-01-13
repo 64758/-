@@ -193,7 +193,9 @@ let NERDTreeQuitOnOpen=1
 
 " ack.vim {
 "if executable('ag')
-let g:ackprg = "C:/cygwin64/bin/ag.exe --vimgrep"
+if(g:isWin)
+    let g:ackprg = "C:/cygwin64/bin/ag.exe --vimgrep"
+endif
 "endif
 " }
 
