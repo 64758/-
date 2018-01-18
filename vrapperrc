@@ -1,1 +1,15 @@
-noremap ;; $i<right>;<esc>
+nnoremap ;rw viw"0p
+nnoremap ;r[ di[<left>"0p
+nnoremap ;r( di(<left>"0p
+nnoremap ;r{ di{<left>"0p
+nnoremap ;r" di"<left>"0p
+nnoremap ;r< di<<left>"0p
+
+nnoremap ;; $i<right>;<esc>
+
+nnoremap ;cc ^i/* <esc>$i<right> */<esc>
+nnoremap ;cu :s#/\* ##g<enter>:s# \*/##g<enter>
+nnoremap ;ic $i<right> /* */<left><left> <left>
+
+set tabstop=4
+set clipboard+=unnamed
